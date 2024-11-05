@@ -65,7 +65,7 @@ public:
     {
         if (attendance < 75)
         {
-            cout << name << " has low attendance(shortage): " << attendance << " classes" << endl;
+            cout << name << "   has low attendance(shortage): " << attendance << " classes" << endl;
         }
         else
         {
@@ -132,10 +132,10 @@ int main()
     {
         cout << "\n"
              << "Details Of Student :";
+        students[i].cal_percentage();
         students[i].show_details();
         students[i].show_name();
         students[i].show_shortage();
-        students[i].cal_percentage();
     }
 
     students[0].top_5(students, noStudent);
